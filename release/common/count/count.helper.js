@@ -62,7 +62,7 @@ export function count(countFrom, countTo, countDecimals, countDuration, callback
  */
 export function decimalChecker(countTo) {
     var endVal = Number(countTo);
-    if (endVal % 1 !== 0 && Math.abs(endVal) <= 10) {
+    if (endVal % 1 !== 0) {
         return 2;
     }
     return 0;
